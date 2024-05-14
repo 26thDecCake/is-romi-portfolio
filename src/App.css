@@ -1,0 +1,17 @@
+#root {
+  background-color: #282626;
+  color: #fff;
+}
+
+.main-container {
+  padding: 15px;
+}
+
+.about-and-stack-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-container-about-section {
+  min-width: 400px;
+}

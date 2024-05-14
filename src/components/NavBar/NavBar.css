@@ -1,0 +1,37 @@
+/* NavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.role {
+  font-size: 18px;
+}
+
+.right-section {
+  display: flex;
+}
+
+.right-section a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+/* ProjectCard.css */
+.project-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  background-color: #f0f0f0;
+}
+
+.expanded {
+  height: auto;
+  background-color: #f0f0f0;
+}
+
+.details {
+  margin-top: 10px;
+}
