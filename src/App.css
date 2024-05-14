@@ -4,7 +4,7 @@
 }
 
 .main-container {
-  padding: 15px;
+  padding: 25px 50px;
 }
 
 .about-and-stack-flex {
@@ -12,6 +12,10 @@
   flex-direction: row;
 }
 
-.main-container-about-section {
+/* .main-container-about-section {
   min-width: 400px;
+} */
+
+.main-container-skill-section {
+  margin-top: 3rem;
 }
