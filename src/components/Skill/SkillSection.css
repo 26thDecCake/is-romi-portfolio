@@ -1,5 +1,4 @@
-/* SkillsSection.css */
-.skills-section {
+.skills {
   display: flex;
   flex-direction: column;
 }
@@ -12,5 +11,4 @@
 
 .skills-grid div {
   font-size: 30px;
-  /* Set the desired font size for the icon */
 }

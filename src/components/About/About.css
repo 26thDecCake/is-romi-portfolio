@@ -1,6 +1,6 @@
-/* About.css */
-.about-section {
+.about {
   margin-top: 30px;
+  margin-bottom: 3rem;
   max-width: 40vw;
 }
 
@@ -23,7 +23,7 @@
   gap: 10px;
 }
 
-.social-button {
+.socials-button {
   cursor: pointer;
   border-radius: 50%;
   width: 40px;
@@ -35,7 +35,25 @@
   border: none;
 }
 
-.social-icon {
+.socials-icon {
   width: 25px;
   height: 25px;
+}
+
+.glitch {
+  position: relative;
+  animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+
+  2%,
+  64% {
+    transform: skew(-5deg);
+  }
+
+  4%,
+  60% {
+    transform: skew(5deg);
+  }
 }

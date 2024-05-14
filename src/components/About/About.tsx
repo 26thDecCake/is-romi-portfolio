@@ -1,29 +1,36 @@
-// About.tsx
 import React from 'react';
 import './About.css'
-import { FaEnvelope, FaGithub, FaLinkedin  } from 'react-icons/fa';
+import { FaCodepen, FaEnvelope, FaGithub, FaLinkedin  } from 'react-icons/fa';
 
 const About: React.FC = () => {
-  // const openLink = (url: string) => {
-  //   window.open(url, '_blank');
-  // };
-
+  
   return (
-    <section className="about-section">
+    <div className="about">
       <h2 className='about-lead'>Hello, I'm Romi</h2>
-      <p className='about-desc'>A full stack developer with over 4 years of practical experiences at industry-driven company developing in-house applications in both desktop and web environment.<br />My most prominent full stack projects would be IT Administration System & Employee Self-Service WebApp.</p>
+      <p className='about-desc'>A full stack developer with practical experiences at industry-driven company. I developed in-house applications in both desktop and web environment.<br />My most prominent full stack projects would be IT Administration System, Employee Self-Service Web App & Online Recruitment Web App.</p>
       <div className="about-socials-link">
-        <a href="https://www.linkedin.com/in/romi-than" target='_blank' rel="noopener noreferrer">
-          <button className="social-button"><FaLinkedin className='social-icon' /></button>
+        <a href="https://www.linkedin.com/in/romi-than"
+          target='_blank' rel="noopener noreferrer"
+          className='socials-link-button-container'>
+          <button className="socials-button"><FaLinkedin className='socials-icon glitch' /></button>
         </a>
-        <a href="https://www.github.com/26thDecCake" target='_blank' rel="noopener noreferrer">
-          <button className="social-button"><FaGithub className='social-icon' /></button>
+        <a href="https://www.github.com/26thDecCake"
+          target='_blank' rel="noopener noreferrer"
+          className='socials-link-button-container'>
+          <button className="socials-button"><FaGithub className='socials-icon glitch' /></button>
         </a>
-        <a href="mailto:rromithan@gmail.com" target='_blank' rel="noopener noreferrer">
-          <button className="social-button"><FaEnvelope className='social-icon' /></button>
+        <a href="https://codepen.io/notsomuchAasB"
+          target='_blank' rel="noopener noreferrer"
+          className='socials-link-button-container'>
+          <button className="socials-button"><FaCodepen className='socials-icon glitch' /></button>
+        </a>
+        <a href="mailto:rromithan@gmail.com"
+          target='_blank' rel="noopener noreferrer"
+          className='socials-link-button-container'>
+          <button className="socials-button"><FaEnvelope className='socials-icon glitch' /></button>
         </a>
       </div>
-    </section>
+    </div>
   );
 };
 

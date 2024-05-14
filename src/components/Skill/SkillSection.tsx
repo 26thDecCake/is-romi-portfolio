@@ -1,4 +1,3 @@
-// SkillsSection.tsx
 import React from 'react';
 import './SkillSection.css';
 import { IconType } from 'react-icons';
@@ -16,7 +15,7 @@ const SkillSection: React.FC<{ title: string; skills: Skill[] }> = ({ title, ski
   }
 
   return (
-    <div className="skills-section">
+    <div className="skills">
       <h4 style={{ marginBottom: '10px', marginTop: '10px' }}>{title}</h4>
       <div className="skills-grid">
         {skills.map((skill, index) => (
