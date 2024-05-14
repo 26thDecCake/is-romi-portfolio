@@ -6,6 +6,11 @@
 
 .skills-grid {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   width: 500px;
+}
+
+.skills-grid div {
+  font-size: 30px;
+  /* Set the desired font size for the icon */
 }

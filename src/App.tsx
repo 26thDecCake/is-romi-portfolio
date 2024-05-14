@@ -2,7 +2,7 @@ import './styles.css';
 import About from './components/About/About';
 // import Contact from './Contact';
 import './App.css'
-import NavBar from './components/NavBar/NavBar';
+// import NavBar from './components/NavBar/NavBar';
 import SkillSection from './components/Skill/SkillSection';
 import { SiCss3, SiDevexpress, SiJavascript, SiMicrosoftsqlserver, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiTypescript, SiVisualbasic, SiVite } from "react-icons/si";
 import { SiCsharp } from "react-icons/si";
@@ -75,9 +75,9 @@ function App() {
   return (
     <>
       <div>
-        <section className='nav-section'>
+        {/* <section className='nav-section'>
           <NavBar />
-        </section>
+        </section> */}
         <section className='main-section'>
           <main className='main-container'>
             {/* <div className="about-and-stack-flex"> */}

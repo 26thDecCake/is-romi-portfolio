@@ -1,0 +1,39 @@
+/* About.css */
+.about-section {
+  margin-top: 30px;
+  max-width: 40vw;
+}
+
+.about-lead {
+  font-size: 5.3125rem;
+  line-height: 5rem;
+  margin-bottom: 10px;
+}
+
+.about-desc {
+  font-size: 16px;
+}
+
+.about-socials-link {
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.social-button {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border: none;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+}
