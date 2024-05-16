@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <div className="about">
       <h2 className='about-lead'>Hello, I'm Romi</h2>
-      <p className='about-desc'>A full stack developer with practical experiences at industry-driven company. I developed in-house applications in both desktop and web environment.<br />My most prominent full stack projects would be IT Administration System, Employee Self-Service Web App & Online Recruitment Web App.</p>
+      <p className='about-desc'>A full-stack developer with practical experiences at industry-driven company. I developed in-house applications in both desktop and web environment.<br />My most prominent full stack projects would be IT Administration System, Employee Self-Service Web App & Online Recruitment Web App.</p>
       <div className="about-socials-link">
         <a href="https://www.linkedin.com/in/romi-than"
           target='_blank' rel="noopener noreferrer"

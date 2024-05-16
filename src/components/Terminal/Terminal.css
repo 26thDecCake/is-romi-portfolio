@@ -1,0 +1,70 @@
+:root {
+  --scroll-bar-size: 10px;
+  --scroll-bar-thumb-background-color: rgb(255, 191, 87, 0.2);
+  --scroll-bar-thumb-background-color-active: rgb(255, 191, 87, 0.5);
+}
+
+.terminal-container {
+  background-color: #0b1117;
+  color: rgb(255, 191, 87);
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  border-radius: 10px;
+  border: rgb(48, 206, 206) 1px solid;
+  min-height: 70vh;
+  max-height: 70vh;
+  overflow-y: auto;
+  margin-top: 100px;
+}
+
+.terminal-output {
+  white-space: pre-wrap;
+  margin: 0;
+}
+
+.terminal-input {
+  display: flex;
+  align-items: center;
+  height: 18.1px;
+}
+
+.terminal-prompt {
+  margin-right: 7.5px;
+}
+
+.terminal-input input {
+  width: 100%;
+  font-size: inherit;
+  background-color: #0b1117;
+  color: rgb(255, 191, 87);
+  border: none;
+  outline: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+::-webkit-scrollbar {
+  width: var(--scroll-bar-size);
+  height: var(--scroll-bar-size);
+  background: transparent;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-thumb-background-color);
+  border-radius: var(--scroll-bar-size);
+  border-color: transparent;
+  border-style: solid;
+  border-width: calc(var(--scroll-bar-size)/3);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: var(--scroll-bar-thumb-background-color-active);
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  border-width: 1px;
+  background-color: var(--scroll-bar-thumb-background-color-active);
+  cursor: pointer;
+}

@@ -6,8 +6,7 @@ import { SiCsharp } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { DiGithubFull } from 'react-icons/di';
 import { FaAngular, FaNode, FaGit } from 'react-icons/fa';
-// import ProjectSection from './components/ProjectSection/ProjectSection';
-// import Project from './components/Project/Project';
+import TerminalComponent from './components/Terminal/Terminal';
 
 function App() {
   const programmingLanguages = [
@@ -39,47 +38,12 @@ function App() {
     { name: 'Git', icon: FaGit, link: '' },
     { name: 'GitHub', icon: DiGithubFull, link: '' }
   ];
-
-  // const projects: Project[] = [
-  //   {
-  //     id: 1,
-  //     title: 'Project 1',
-  //     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  //     technologies: ['React', 'TypeScript', 'CSS'],
-  //     platform: 'Web'
-  //   },
-  //   {
-  //     id: 2,
-  //     title: 'Project 2',
-  //     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  //     technologies: ['Node.js', 'Express', 'MongoDB'],
-  //     platform: 'Web'
-  //   }
-  // ];
-
-  // const blob = document.getElementById("blob");
-
-  // if (blob) {
-  //   window.onpointermove = event => { 
-  //     const { clientX, clientY } = event;
-      
-  //     blob.style.left = `${clientX}px`;
-  //     blob.style.top = `${clientY}px`;
-      
-  //     blob.animate({
-  //       left: `${clientX}px`,
-  //       top: `${clientY}px`
-  //     }, { duration: 3000, fill: "forwards" });
-  //   }
-  // }
   
   return (
     <>
-      <div>
-        {/* <div id="blob"></div> */}
-        {/* <div id="blur"></div> */}
-        <section className='main-section'>
-          <main className='main-container'>
+      <section className='main-section'>
+        <main className='main-container'>
+          <div className="left_side">
             <section id='about'>
               <About />
             </section>
@@ -89,16 +53,14 @@ function App() {
               <SkillSection title="Databases" skills={databases} />
               <SkillSection title="Version Control and Collab Tools" skills={versionControlAndTools} />
             </section>
-            {/* <section id='projects'>
-              <ProjectSection projects={projects} />
+          </div>
+          <div className="right_side">
+            <section id="terminal">
+            <TerminalComponent />
             </section>
-            <section id='contact'>
-              <Contact />
-            </section> */}
-          </main>
-        </section>
-        
-      </div>
+          </div>
+        </main>
+      </section>
     </>
   )
 }
