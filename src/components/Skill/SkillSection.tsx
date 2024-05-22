@@ -16,7 +16,7 @@ const SkillSection: React.FC<{ title: string; skills: Skill[] }> = ({ title, ski
 
   return (
     <div className="skills">
-      <h4 style={{ marginBottom: '10px', marginTop: '10px' }}>{title}</h4>
+      <h4 style={{ marginBottom: '10px', marginTop: '10px', color: '#ffbf57' }}>{title}</h4>
       <div className="skills-grid">
         {skills.map((skill, index) => (
           <div key={index} onClick={() => handleSkillClick(skill.name)}>

@@ -1,12 +1,13 @@
 import About from './components/About/About';
 import './App.css'
 import SkillSection from './components/Skill/SkillSection';
-import { SiCss3, SiDevexpress, SiJavascript, SiMicrosoftsqlserver, SiNextdotjs, SiPostgresql, SiPython, SiReact, SiTailwindcss, SiTypescript, SiVisualbasic, SiVite } from "react-icons/si";
+import { SiCss3, SiDevexpress, SiJavascript, SiMicrosoftsqlserver, SiNextdotjs, SiPython, SiReact, SiTailwindcss, SiTypescript, SiVisualbasic, SiVite } from "react-icons/si";
 import { SiCsharp } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
 import { DiGithubFull } from 'react-icons/di';
 import { FaAngular, FaNode, FaGit } from 'react-icons/fa';
 import TerminalComponent from './components/Terminal/Terminal';
+import { BiLogoPostgresql } from 'react-icons/bi';
 
 function App() {
   const programmingLanguages = [
@@ -31,7 +32,7 @@ function App() {
 
   const databases = [
     { name: 'SQL Server', icon: SiMicrosoftsqlserver, link: '' },
-    { name: 'PostgreSQL', icon: SiPostgresql, link: '' }
+    { name: 'PostgreSQL', icon: BiLogoPostgresql, link: '' }
   ];
 
   const versionControlAndTools = [

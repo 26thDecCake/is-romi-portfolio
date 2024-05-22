@@ -17,6 +17,12 @@
   margin-top: 100px;
 }
 
+.terminal-head {
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre;
+  color: cyan;
+}
+
 .terminal-output {
   white-space: pre-wrap;
   margin: 0;
@@ -36,7 +42,7 @@
   width: 100%;
   font-size: inherit;
   background-color: #0b1117;
-  color: rgb(255, 191, 87);
+  color: cyan;
   border: none;
   outline: none;
   font-family: 'Courier New', Courier, monospace;

@@ -1,6 +1,22 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Terminal.css';
 
+const landingTerminalPage = `
+**    ********           *******       *******     ****     ****   **
+/**   **//////           /**////**     **/////**   /**/**   **/**  /**
+/**  /**                 /**   /**    **     //**  /**//** ** /**  /**
+/**  /*********   *****  /*******    /**      /**  /** //***  /**  /**
+/**  ////////**  /////   /**///**    /**      /**  /**  //*   /**  /**
+/**         /**          /**  //**   //**     **   /**   /    /**  /**
+/**   ********           /**   //**   //*******    /**        /**  /**
+//   ////////            //     //     ///////     //         //   // 
+
+Welcome to the humble terminal!
+Type 'help' to show available commands.
+
+
+`;
+
 const TerminalComponent: React.FC = () => {
   const [commands, setCommands] = useState<string[]>([]);
   const [input, setInput] = useState<string>('');
@@ -25,7 +41,7 @@ const TerminalComponent: React.FC = () => {
   };
 
   const handleCommand = (command: string) => {
-    setCommands((prevCommands) => [...prevCommands, `isssss_Romi:~$ ${command}`]);
+    setCommands((prevCommands) => [...prevCommands, `is_Romi:~$ ${command}`]);
 
     switch (command.toLowerCase()) {
       case 'help':
@@ -80,6 +96,7 @@ const TerminalComponent: React.FC = () => {
 
   return (
     <div className="terminal-container" ref={terminalRef} onClick={handleContainerClick}>
+      <div className="terminal-head">{ landingTerminalPage }</div>
       <div className="terminal-output">
         {commands.map((command, index) => (
           <div key={index}>
@@ -88,7 +105,7 @@ const TerminalComponent: React.FC = () => {
         ))}
       </div>
       <div className="terminal-input">
-        <div className="terminal-prompt">isssss_Romi:~$</div>
+        <div className="terminal-prompt">is_Romi:~$</div>
         <input
           id='terminal-input'
           type="text"
