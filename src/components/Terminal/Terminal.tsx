@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import './Terminal.css';
 
+
 const TerminalLanding = `
 **    ********           *******       *******     ****     ****   **
 /**   **//////           /**////**     **/////**   /**/**   **/**  /**
@@ -131,7 +132,36 @@ const TerminalEduEN = `
 `;
 
 const TerminalProjectEN = `
-
+<div class="project-list">
+  <div class="project-item">
+    <img src="images/video-con.gif" alt="Video Conference App" class="project-gif" />
+    <div class="project-description">
+      <h3><a href="https://boom-video-conference.netlify.app/" target="_blank">Video Conference App</a></h3>
+      <p>A video conference application built using React with TypeScript and Next.js.</p>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="images/clock25plus5.gif" alt="25 + 5 Clock" class="project-gif" />
+    <div class="project-description">
+      <h3><a href="https://26thdeccake.github.io/fcc-vite-25-plus-5-clock/" target="_blank">25 + 5 Clock</a></h3>
+      <p>Simple 25 + 5 Clock built with Vite with TypeScript.</p>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="images/drummachine.gif" alt="Drum Machine" class="project-gif" />
+    <div class="project-description">
+      <h3><a href="https://26thdeccake.github.io/fcc-drum-machine/" target="_blank">Drum Machine</a></h3>
+      <p>Drum Machine, each button plays a different sound and binded to specified key.</p>
+    </div>
+  </div>
+  <div class="project-item">
+    <img src="images/tictactoe.gif" alt="Tic Tac Toe" class="project-gif" />
+    <div class="project-description">
+      <h3><a href="https://26thdeccake.github.io/tic-tac-toe-nextjs/" target="_blank">Tic Tac Toe</a></h3>
+      <p>Tic Tac Toe, align 3 of the same symbol to win.</p>
+    </div>
+  </div>
+</div>
 `;
 
 const TerminalComponent: React.FC = () => {
@@ -139,10 +169,10 @@ const TerminalComponent: React.FC = () => {
   const [input, setInput] = useState<string>('');
   const terminalRef = useRef<HTMLDivElement>(null);
 
-  function handleContainerClick() {
+  function handleContainerClick(event: React.MouseEvent<HTMLDivElement>) {
     const inputElement = document.getElementById('terminal-input');
-    if (inputElement) {
-      inputElement.focus();
+    if (inputElement && !(event.target as HTMLElement).matches('a')) {
+      inputElement.focus({ preventScroll: true });
     }
   }
 
@@ -208,9 +238,10 @@ const TerminalComponent: React.FC = () => {
       <div className="terminal-head">{ TerminalLanding }</div>
       <div className="terminal-output">
         {commands.map((command, index) => (
-          <div key={index}>
-            {command}
-          </div>
+          <div
+            key={index}
+            dangerouslySetInnerHTML={{ __html: command }}
+          />
         ))}
       </div>
       <div className="terminal-input">

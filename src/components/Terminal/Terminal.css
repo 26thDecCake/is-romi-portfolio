@@ -74,3 +74,38 @@
   background-color: var(--scroll-bar-thumb-background-color-active);
   cursor: pointer;
 }
+
+.project-list {
+  margin-top: 1px;
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 10px; */
+}
+
+.project-gif {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.project-description {
+  max-width: calc(100% - 90px);
+}
+
+.project-description h3 {
+  margin: 0 0 5px 0;
+  color: #08fdd8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project-description a {
+  color: #08fdd8;
+}
+
+.project-description p {
+  margin: 0;
+  color: #fff;
+}
